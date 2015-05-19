@@ -1,0 +1,12 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+.carosuel{
+	width: 80%;
+	margin: 0 auto;
+	clear: both;
+}
+
+.carousel-inner{
+  max-height: 500px !important;
+}
