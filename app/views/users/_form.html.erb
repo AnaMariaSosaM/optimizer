@@ -10,12 +10,14 @@
       </ul>
     </div>
   <% end %>
-  <div class="form-group">
-    <div class="field">
-      <%= f.text_field :email, class: "form-control" %>
+  <div class="form-inline">
+    <div class="form-group">
+      <div class="field">
+        <%= f.text_field :email, class: "form-control", id:"exampleInputName2" %>
+      </div>
     </div>
-  </div>
-  <div class="actions">
-    <%= f.submit 'Enviar', class: "btn btn-default"%>
-  </div>
+    <div class="actions">
+      <%= f.submit 'Enviar', class: "btn btn-default btnSend"%>
+    </div>
+  </div>  
 <% end %>
