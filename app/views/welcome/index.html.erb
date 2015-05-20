@@ -64,12 +64,30 @@
     </div>
     <div class="form-content">
       <p class="content">Te ayudaremos a lograrlo, envíanos tu correo</p>
-      <form class="form-inline">
+
+      <%= form_for(@user) do |f| %>
+        <% if @user.errors.any? %>
+          <div id="error_explanation">
+            <h2><%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved:</h2>
+
+            <ul>
+            <% @user.errors.full_messages.each do |message| %>
+              <li><%= message %></li>
+            <% end %>
+            </ul>
+          </div>
+        <% end %>
         <div class="form-group">
-          <input type="email" class="form-control" id="exampleInputEmail2" placeholder="jane.doe@example.com">
+          <div class="field">
+            <%= f.label :email %><br>
+            <%= f.text_field :email, class: "form-control" %>
+          </div>
         </div>
-        <button type="submit" class="btn btn-default btnSend">Enviar</button>
-      </form>
+        <div class="actions">
+          <%= f.submit 'Enviar', class: "btn btn-default"%>
+        </div>
+      <% end %>
+
       <p class="message">No te preocupes, no te llenaremos la bandeja de entrada.</p>
     </div>
   </div>
