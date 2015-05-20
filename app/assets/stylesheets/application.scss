@@ -1,12 +1,51 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-.carosuel{
-	width: 80%;
+.carouselContent{
+	width: 70%;
 	margin: 0 auto;
 	clear: both;
 }
-
+.slide{
+	margin-bottom: 5%;
+}
 .carousel-inner{
   max-height: 500px !important;
+}
+h1{
+	color: #37DDDD;
+	font-family: 'Roboto', sans-serif;
+	font-size: 3em;
+	text-align: center;
+}
+.content{
+	color: #826F52;
+	font-family: 'Slabo 27px', serif;
+	font-size: 27px;
+	
+}
+.message{
+	color: #826F52;
+	font-family: 'Slabo 27px', serif;
+	font-size: 17px;
+	
+}
+.btnSend, .btnSend:hover {
+	color: #fff;
+	background-color: #37DDDD;
+	border-color: #37DDDD;
+}
+
+.form-content{
+	text-align: center;
+}
+.form-inline{
+	margin: 11px;
+}
+.initial-message{
+	margin-left: 12%;
+}
+.carousel-caption h3{
+	background-color: rgba(0, 0, 0, 0.48);
+	width: 70%;
 }
